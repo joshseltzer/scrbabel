@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:scrbabel/game.dart';
 import 'splash.dart';
 import 'menu.dart';
 
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
       ),
       home: SplashScreen(),
       routes: <String, WidgetBuilder>{
-        '/Menu': (BuildContext context) => new Menu()
+        '/menu': (BuildContext context) => new Menu(),
+        '/game': (BuildContext context) => new Game()
       },
     );
   }
